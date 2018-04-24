@@ -15,6 +15,7 @@ function createPost() {
   let postElement = document.getElementById("post");
 
   postElement.innerHTML = postSection;
+  debugger;
   postElement.getElementById("comment").innerHTML = commentsSection;
 }
 
