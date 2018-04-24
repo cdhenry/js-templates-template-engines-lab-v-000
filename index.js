@@ -10,8 +10,9 @@ function createPost() {
   let main = document.getElementByTagName("main");
   main.innerHTML += pageTemplate;
 
-  //execute template function with JSON object for the interpolated values
-  let templateHTML = templateFn({ 'title': title, 'post': post, 'author': author });
+  let postSection = postTemplate({ 'title': title, 'post': post, 'author': author });
+  let commentsSection = commentsTemplate();
+  let postElement = document.getElementById("post");
 
   //append rather than replace!
   postsDiv.innerHTML += templateHTML;
