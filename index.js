@@ -9,8 +9,7 @@ function postComment() {
   //insert comment into "comments" div in this format:
   //<div class="comment"><p>comment</p><p>Posted By: <span class="commenter">commenter</span></p></div>
 
-  //create template string - THIS IS THE ONLY LINE WE HAVE TO CHANGE
-  //var commentTemplate = '<div class="comment"><p><%= comment %></p><p>Posted By: <span class="commenter"><%= commenter %></span></p></div>';
+  //create template string
   let commentTemplate = document.getElementById("comment-template").innerHTML;
 
   //create template function
