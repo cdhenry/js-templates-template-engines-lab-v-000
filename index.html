@@ -31,6 +31,23 @@
       <div class="sidebar">
       </div>
     </script>
+    <script id="post-template" type="text/x-lodash-template">
+      </article>
+        <div class="post">
+          <div class="post-body"><%- post %></div>
+          <div class="author">
+            <p>
+              <span class="posted-by">Posted By: </span>
+              <% if(author !== '') { %>
+              <%- author %>
+              <% } else { %>
+              Anonymous
+              <% } %>
+            </p>
+          </div>
+        </div>
+      </article>
+    </script>
     <script id="comments-template" type="text/x-lodash-template">
       <div class="comments">
         <div class="comments-body"><%- comment %></div>
