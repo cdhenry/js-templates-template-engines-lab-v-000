@@ -8,6 +8,7 @@ function createPost() {
   let commentsTemplate = _.template(document.getElementById("comments-template").innerHTML);
 
   let main = document.getElementById("main");
+  debugger;
   main.innerHTML += pageTemplate;
 
   let postSection = postTemplate({ 'title': title, 'post': post, 'author': author });
