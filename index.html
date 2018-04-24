@@ -44,7 +44,11 @@
         <div class="commenter">
           <p>
             <span class="posted-by">Posted By: </span>
-            <%- commenter %>
+            <% if(commenter !== '') { %>
+            <%= commenter %>
+            <% } else { %>
+            Anonymous
+            <% } %>
           </p>
         </div>
       </div>
