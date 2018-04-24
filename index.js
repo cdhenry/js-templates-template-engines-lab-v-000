@@ -3,5 +3,5 @@ function createPost() {
 }
 
 function postComment() {
-  
+
 }
