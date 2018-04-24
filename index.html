@@ -15,21 +15,8 @@
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <script id="page-template" type="text/x-lodash-template">
-      <div id="post">
-        <div class="post-body"><%- post %></div>
-        <div class="author">
-          <p>
-            <span class="posted-by">Posted By: </span>
-            <% if(author !== '') { %>
-              <%- author %>
-            <% } else { %>
-              Anonymous
-            <% } %>
-          </p>
-        </div>
-      </div>
-      <div id="sidebar">
-      </div>
+      <div id="sidebar"></div>
+      <div id="post"></div>
     </script>
     <script id="post-template" type="text/x-lodash-template">
       <article>
