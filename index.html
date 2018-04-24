@@ -39,17 +39,17 @@
       <div id="comments">
         <form onsubmit="postComment();return false;">
           Name: <input type="text" id="commenterName"><br>
-          Comment: <input type="textarea" id="commentText"><br>
+          Comment: <input type="text" id="commentText"><br>
           <input type="submit">
         </form>
       </div>
     </script>
     <script id="comment-template" type="text/x-lodash-template">
       <div id="comment">
-        <div class="comment-body"><%- comment %></div>
-        <footer class="commenter">
+        <div><%- comment %></div>
+        <footer>
           <p>
-            <span class="posted-by">Posted By: </span>
+            <span>Posted By: </span>
             <% if(commenter !== '') { %>
               <%- commenter %>
             <% } else { %>
