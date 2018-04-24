@@ -5,6 +5,13 @@
   </head>
   <body>
     <main>
+      <form id="post-form" onSubmit="addPost()">
+        Add post: <input type="text" id="postText"><br>
+        Your name: <input type="text" id="posterName"><br>
+      <input type="submit">
+      </form>
+      <div id="posts">
+      </div>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
