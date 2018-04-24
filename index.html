@@ -20,7 +20,11 @@
         <div class="author">
           <p>
             <span class="posted-by">Posted By: </span>
-            <%- author %>
+            <% if(commenter !== '') { %>
+            <%= commenter %>
+            <% } else { %>
+            Anonymous
+            <% } %>
           </p>
         </div>
       </div>
