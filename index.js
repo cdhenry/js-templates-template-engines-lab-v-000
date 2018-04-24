@@ -14,8 +14,8 @@ function createPost() {
   let commentsSection = commentsTemplate();
   let postElement = document.getElementById("post");
 
-  //append rather than replace!
-  postsDiv.innerHTML += templateHTML;
+  postElement.innerHTML = postSection;
+  postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
 
 function postComment() {
