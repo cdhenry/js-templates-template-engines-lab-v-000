@@ -10,7 +10,7 @@ function createPost() {
   let main = document.getElementById("main");
   main.innerHTML += pageTemplate();
 
-  let postSection = postTemplate({ 'title': title, 'post': post, 'author': author });
+  let postSection = postTemplate({ 'title': title, 'body': body, 'author': author });
   let commentsSection = commentsTemplate();
   let postElement = document.getElementById("post");
 
