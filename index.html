@@ -37,14 +37,6 @@
     </script>
     <script id="comments-template" type="text/x-lodash-template">
       <div id="comments">
-        <div class="comments-body"><%- comment %></div>
-        <div class="commenter">
-          <p>
-            <span class="posted-by">Posted By: </span>
-            <%- commenter %>
-          </p>
-        </div>
-
         <form onsubmit="postComment();return false;">
           Name: <input type="text" id="commenterName"><br>
           Comment: <input type="textarea" id="commentText"><br>
