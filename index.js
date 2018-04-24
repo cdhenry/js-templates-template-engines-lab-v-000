@@ -9,7 +9,7 @@ function createPost() {
   let commentsTemplate = _.template(document.getElementById("comments-template").innerHTML);
 
   let main = document.getElementByTagName("main");
-  main.innerHTML += pageTemplate;
+  main.innerHTML += pageTemplate();
 
   //execute template function with JSON object for the interpolated values
   let templateHTML = templateFn({ 'title': title, 'post': post, 'author': author });
