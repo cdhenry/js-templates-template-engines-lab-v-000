@@ -14,6 +14,19 @@
       <div id="posts">
       </div>
     </main>
+    <script id="page-template" type="text/x-lodash-template">
+      <div class="post">
+        <div class="post-body"><%= post %></div>
+        <div class="author">
+          <p>
+            <span class="posted-by">Posted By: </span>
+            <%= author %>
+          </p>
+        </div>
+      </div>
+      <div class="sidebar">
+      </div>
+    </script>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
     <!-- Open this file and call `mocha.run()` in console to run tests -->
