@@ -32,9 +32,9 @@
     <script id="post-template" type="text/x-lodash-template">
       <article>
         <header><%- title %></header>
-        <div id="post">
+        <div class="post">
           <div class="post-body"><%- post %></div>
-          <div class="author">
+          <footer class="author">
             <p>
               <span class="posted-by">Posted By: </span>
               <% if(author !== '') { %>
@@ -43,7 +43,7 @@
                 Anonymous
               <% } %>
             </p>
-          </div>
+          </footer>
         </div>
       </article>
     </script>
