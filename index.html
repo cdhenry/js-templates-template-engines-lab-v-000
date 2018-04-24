@@ -11,8 +11,6 @@
         Your Name: <input type="text" id="author"><br>
       <input type="submit">
       </form>
-      <div id="posts">
-      </div>
     </main>
     <script id="page-template" type="text/x-lodash-template">
       <div class="post">
@@ -58,6 +56,12 @@
             <%- commenter %>
           </p>
         </div>
+
+        <form onsubmit="postComment();return false;">
+          Name: <input type="text" id="commenterName"><br>
+          Comment: <input type="textarea" id="commentText"><br>
+          <input type="submit">
+        </form>
       </div>
     </script>
     <script id="comment-template" type="text/x-lodash-template">
