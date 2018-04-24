@@ -63,7 +63,7 @@
     <script id="comment-template" type="text/x-lodash-template">
       <div class="comment">
         <div class="comment-body"><%- comment %></div>
-        <div class="commenter">
+        <footer class="commenter">
           <p>
             <span class="posted-by">Posted By: </span>
             <% if(commenter !== '') { %>
@@ -72,7 +72,7 @@
               Anonymous
             <% } %>
           </p>
-        </div>
+        </footer>
       </div>
     </script>
     <script src="node_modules/lodash/lodash.min.js"></script>
