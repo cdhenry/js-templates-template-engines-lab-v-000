@@ -3,11 +3,10 @@ function createPost() {
   let post = document.getElementById("post").value;
   let title = document.getElementById("title").value;
 
-  //create template string
-  let postTemplate = document.getElementById("post-template").innerHTML;
-
-  //create template function
-  let templateFn = _.template(postTemplate);
+  //create template functions
+  let pageTemplate = _.template(document.getElementById("page-template").innerHTML);
+  let postTemplate = _.template(document.getElementById("post-template").innerHTML);
+  let commentsTemplate = _.template(document.getElementById("comments-template").innerHTML);
 
   let postsDiv = document.getElementById("posts");
 
